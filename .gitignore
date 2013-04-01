@@ -1,0 +1,8 @@
+# sources
+/pygraphviz-*.tar.gz
+
+# fedpkg build artifacts
+/.build-*.log
+/pygraphviz-*.src.rpm
+/x86_64/
+/pygraphviz-*/
