@@ -11,6 +11,7 @@ Source0:        https://pypi.python.org/packages/source/p/pygraphviz/%{name}-%{v
 BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
 BuildRequires:  graphviz-devel
+BuildRequires:  python-sphinx
 
 
 %description
@@ -35,11 +36,7 @@ NetworkX but provides a similar programming interface.
 export PYTHONPATH="`echo $(pwd)/build/lib.linux-*`"
 
 pushd doc
-SPHINXBUILD=sphinx-build
-if test "%{?rhel}" = 6; then
-   SPHINXBUILD=sphinx-1.0-build
-fi
-make SPHINXBUILD=$SPHINXBUILD html
+make html
 rm build/html/.buildinfo
 popd
 
