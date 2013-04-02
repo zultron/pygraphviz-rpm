@@ -12,6 +12,7 @@ BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
 BuildRequires:  graphviz-devel
 BuildRequires:  python-sphinx
+BuildRequires:  python-nose
 
 
 %description
